@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    # below action is used to fetch the contents of a repository to the runner, so that the workflows can access them.
     - uses: actions/checkout@v2
     - name: display the below content
       run : echo "Hello, Welocome to 1st workflow"
